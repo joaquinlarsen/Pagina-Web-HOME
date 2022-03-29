@@ -179,6 +179,8 @@ body {
     display: grid;
     gap: 1em;
     justify-items: center;
+    align-items: center;
+    grid-template-rows: 20px auto 50px;
     width: 260px;
     overflow: hidden;
     margin: 0 auto;
@@ -668,8 +670,9 @@ hr {
     padding-top: 20px;
     padding-bottom: 20px;
     display: grid;
-    grid-template-columns: 40px 1fr 40px;
+    grid-template-columns: 50px 1fr 50px;
     align-items: center;
+    gap: 1em;
 }
 
 .tektrol__body {
@@ -819,6 +822,10 @@ hr {
         grid-template-columns: 30px 1fr 30px;
     }
 
+    .mustang_container {
+        grid-template-columns: 30px 1fr 30px;
+    }
+
     .testimony__body {
         grid-template-columns: 1fr;
         grid-template-rows: max-content max-content;
@@ -831,8 +838,13 @@ hr {
         grid-template-rows: max-content 1fr;
         gap: 3em;
         text-align: center;
+        height: auto;
     }
 
+    .knowledge_quien {
+        clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 85%, 0% 100%);
+        background-position: bottom;
+    }
 
     .knowledge__container_oficina {
         display: block;
@@ -842,7 +854,6 @@ hr {
         gap: 3em;
         text-align: center;
     }
-
 
     .knowledge__picture {
         justify-self: center;
@@ -890,6 +901,11 @@ hr {
     }
 
     .testimony__container {
+        grid-template-columns: 28px 1fr 28px;
+        gap: .9em;
+    }
+
+    .mustang_container {
         grid-template-columns: 28px 1fr 28px;
         gap: .9em;
     }
@@ -992,7 +1008,7 @@ hr {
 
     }
 
-    .tektrol__container {
+    .tektrol_container {
         grid-template-columns: 30px 1fr 30px;
     }
 
@@ -1037,7 +1053,7 @@ hr {
         --padding-container: 60px 0;
     }
 
-    .tektrol__container {
+    .tektrol_container {
         grid-template-columns: 30px 1fr 30px;
         gap: .9em;
     }
