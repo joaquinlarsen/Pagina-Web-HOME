@@ -313,9 +313,9 @@ body {
 
 .knowledge__img {
     max-width: 450px;
+    max-height: 350px;
     width: 100%;
     display: grid;
-    border-radius: 10px;
 }
 
 .knowledge__cta {
